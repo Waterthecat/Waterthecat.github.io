@@ -48,7 +48,7 @@
   /*End of Initial Variables*/
   </script>
   <script type="text/javascript">
-  var bg = "https://cdn.jsdelivr.net/gh/Waterthecat/cdn/img/custom/cover/(0).jpg,https://cdn.jsdelivr.net/gh/Waterthecat/cdn/img/custom/cover/(1).jpg,https://cdn.jsdelivr.net/gh/Waterthecat/cdn/img/custom/cover/(2).jpg".split(",");
+  var bg = "https://cdn.jsdelivr.net/gh/Waterthecat/cdn/img/custom/cover/(0).jpg,https://cdn.jsdelivr.net/gh/Waterthecat/cdn/img/custom/cover/(1).jpg,https://cdn.jsdelivr.net/gh/Waterthecat/cdn/img/custom/cover/(2).jpg,https://cdn.jsdelivr.net/gh/Waterthecat/cdn/img/custom/cover/(3).jpg,https://cdn.jsdelivr.net/gh/Waterthecat/cdn/img/custom/cover/(4).jpg,https://cdn.jsdelivr.net/gh/Waterthecat/cdn/img/custom/cover/(5).jpg".split(",");
   var bgindex = Math.floor(Math.random()*bg.length);
   if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
     alert('朋友，IE浏览器未适配哦~');
@@ -60,6 +60,11 @@
   <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
   </style>
 <meta name="generator" content="Hexo 5.4.0"></head>
+
+<!--自定义看板娘-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="/live2d-widget/autoload.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
 
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
   <div class="scrollbar" id="bar">
@@ -77,7 +82,7 @@
         </a>
       </div>
       <div class="header-info">
-        <p>一个普通人</p>
+        <p>领我到您的沉寂的中心，使我的心充满了歌吧。</p>
         <div class="top-social_v2">
           <li id="bg-pre">
             <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
@@ -348,16 +353,6 @@
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-android faa-vertical" aria-hidden="true"></i>
                     客户端
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/atom.xml">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
-                    RSS
                   </span>
                 </a>
                 
@@ -646,6 +641,27 @@ $(document).ready(function() {
 });
 </script>
 
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+  var now = new Date(); 
+  function createtime() { 
+    var grt= new Date("08/10/2021 12:00:00");//此处修改你的建站时间或者网站上线时间 
+    now.setTime(now.getTime()+250); 
+    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+    document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+  } 
+  setInterval("createtime()",250);
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
     <div class="openNav no-select" style="height: 50px;">
       <div class="iconflat no-select" style="width: 50px; height: 50px;">
         <div class="icon"></div>
@@ -873,16 +889,6 @@ $(document).ready(function() {
         
       </li>
     
-      <li>
-        <a href="/atom.xml">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
-            RSS
-          </span>
-        </a>
-        
-      </li>
-    
   </ul>
   <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
 </div>
@@ -953,3 +959,5 @@ $(document).ready(function() {
 </script>
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
