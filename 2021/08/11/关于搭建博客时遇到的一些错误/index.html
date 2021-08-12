@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">水猫の屋</title>
+  <title itemprop="name">关于搭建博客时遇到的一些错误 | 水猫の屋</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -331,6 +331,30 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
 
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/repo/jpg/(39).jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/repo/jpg/(39).jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      关于搭建博客时遇到的一些错误</h1>
+      <p class="entry-census">
+        <span>
+          <a target="_blank" rel="noopener" href="https://Waterthecat.github.io">
+            <img src="https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/custom/avatar.jpg">
+          </a>
+        </span>
+        <span>
+          <a target="_blank" rel="noopener" href="https://Waterthecat.github.io">waterthecat</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2021-8-11<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
@@ -338,41 +362,14 @@
         <div class="toc"></div>
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
-          <header class="entry-header">
-            <h1 class="entry-title"></h1>
-            <p class="entry-census">&nbsp;·&nbsp;2021-8-13&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
-
-            <hr>
-          </header>
-        
         <div class="entry-content">
-          <p>-–</p>
-<p>title: 关于搭建博客时遇到的一些错误</p>
-<p>author: waterthecat</p>
-<p>avatar: <a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/custom/avatar.jpg">https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/custom/avatar.jpg</a></p>
-<p>authorLink: <a target="_blank" rel="noopener" href="https://waterthecat.github.io/">https://Waterthecat.github.io</a></p>
-<p>authorAbout: </p>
-<p>authorDesc: </p>
-<p>categories: 技术</p>
-<p>date: 2021-8-13 07:01:00</p>
-<p>comments: true</p>
-<p>tags: 技术</p>
-<p> - web</p>
-<p>keywords: 关于搭建博客时遇到的一些错误</p>
-<p>description: 小白上路</p>
-<p>photos: <a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/repo/jpg/(39).jpg">https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/repo/jpg/(39).jpg</a></p>
-<p>-–</p>
-<h1 id="关于搭建博客时遇到的一些错误"><a href="#关于搭建博客时遇到的一些错误" class="headerlink" title="关于搭建博客时遇到的一些错误"></a>关于搭建博客时遇到的一些错误</h1><h2 id="说在前面"><a href="#说在前面" class="headerlink" title="说在前面"></a>说在前面</h2><p>​        小站是基于HEXO并套用了Sakura主题构建的，在建站时遇到了许多困难（<del>本质上是因为博主个人的编程经验约等于0造成的</del>），不过经过几天的不断试错总算是勉强解决了大部分问题，所以通过记录下这些问题方便日后维护。同时希望能和各位交流交流心得，帮助其他同我遇到一样问题的博主。</p>
+          <h1 id="关于搭建博客时遇到的一些错误"><a href="#关于搭建博客时遇到的一些错误" class="headerlink" title="关于搭建博客时遇到的一些错误"></a>关于搭建博客时遇到的一些错误</h1><h2 id="说在前面"><a href="#说在前面" class="headerlink" title="说在前面"></a>说在前面</h2><p>​        小站是基于HEXO并套用了Sakura主题构建的，在建站时遇到了许多困难（<del>本质上是因为博主个人的编程经验约等于0造成的</del>），不过经过几天的不断试错总算是勉强解决了大部分问题，所以通过记录下这些问题方便日后维护。同时希望能和各位交流交流心得，帮助其他同我遇到一样问题的博主。</p>
 <h3 id="关于归档和清单的子项跳转到404界面这件事"><a href="#关于归档和清单的子项跳转到404界面这件事" class="headerlink" title="关于归档和清单的子项跳转到404界面这件事"></a>关于归档和清单的子项跳转到404界面这件事</h3><hr>
-<blockquote>
-<p>在主题文件夹下languages/zh-cn.yml等文件中增加了相关子页面的信息仍然会跳转到404界面</p>
-</blockquote>
+<p><em>在主题文件夹下languages/zh-cn.yml等文件中增加了相关子页面的信息仍然会跳转到404界面</em></p>
 <hr>
 <p>只是还没有添加相应tag的博客罢了（悲）</p>
 <h3 id="关于aplayer播放器无法显示的二三事"><a href="#关于aplayer播放器无法显示的二三事" class="headerlink" title="关于aplayer播放器无法显示的二三事"></a>关于aplayer播放器无法显示的二三事</h3><hr>
-<blockquote>
-<p>以下错误均在使用网易云音乐的基础上发生，使用其它网站的歌曲/歌单的错误解决方法暂时不清楚</p>
-</blockquote>
+<p><em>以下错误均在使用网易云音乐的基础上发生，使用其它网站的歌曲/歌单的错误解决方法暂时不清楚</em></p>
 <hr>
 <p>查看是否在主题文件夹下的_config.yml或根目录/course/music/index.md中调整了歌单/歌曲的id</p>
 <p>查看是否将vip/失效或者其它限制播放的歌曲放入目标歌单中</p>
@@ -380,9 +377,7 @@
 <p><strong>查看目标歌单是否在电脑的网易云音乐app中播放过</strong>（水猫栽在这了）</p>
 <p>详细说一下最后一点：就是下载了网易云音乐的电脑端app后播放过目标歌单的歌曲后aplayer就不能在博客中使用这个歌单，解决方法很简单，就是再建立一个空歌单把选定的歌曲再加入并且不要再在app中播放这个歌单。</p>
 <h3 id="关于iframe播放器无法加载这件事"><a href="#关于iframe播放器无法加载这件事" class="headerlink" title="关于iframe播放器无法加载这件事"></a>关于iframe播放器无法加载这件事</h3><hr>
-<blockquote>
-<p>同上，只限网易云音乐的iframe插件</p>
-</blockquote>
+<p><em>同上，只限网易云音乐的iframe插件</em></p>
 <hr>
 <p>这个问题没办法完美解决</p>
 <p>实践下来使用第二种大小的插件并且在网易云的代码中插入http:而非https:</p>
@@ -397,11 +392,14 @@
 <p>这些命令时会出现有关url的error</p>
 <h3 id="关于导航栏中“关于”的子项“关于我”的内容修改那些事"><a href="#关于导航栏中“关于”的子项“关于我”的内容修改那些事" class="headerlink" title="关于导航栏中“关于”的子项“关于我”的内容修改那些事"></a>关于导航栏中“关于”的子项“关于我”的内容修改那些事</h3><p>在Sakura/source/js/botui.js中仅能修改对话框中内容，但是无法修改对话框上方的“樱花庄的haojun”，“真白”以及“mashiro”等文本。博主尝试在根目录\source\about\index.md中进行修改，但发现以下注释</p>
 <blockquote>
-
-<!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->
-<p><div class="entry-content"><br>&lt;div class=”moe-mashiro” style=”text-align:center; font-size: 50px; <br>……                              </p>
+<!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->            
 </blockquote>
-<p>博主尝试在这里进行修改，确实可以改变对话框上方的多处文本，但是将会使对话框内内容无法显示。</p>
+<p>博主尝试在这附近</p>
+<pre><code>&lt;div class=&quot;entry-content&quot;&gt;
+&lt;div class=&quot;moe-mashiro&quot; style=&quot;text-align:center; font-size: 50px; 
+......
+</code></pre>
+<p>进行修改，确实可以改变对话框上方的多处文本，但是将会使对话框内内容无法显示。</p>
 <h3 id="关于首页视频无法播放这件事"><a href="#关于首页视频无法播放这件事" class="headerlink" title="关于首页视频无法播放这件事"></a>关于首页视频无法播放这件事</h3><p>博主上传了一个大小将近19m的视频且cdn路径有效，但一直显示加载中。</p>
 <p>其它大佬说这个视频不应超过20m，也许是因为博主的视频比较大了，日后我会更换较小版本的视频再次尝试是否可以播放。</p>
 <h3 id="关于改变窗口分辨率这件事"><a href="#关于改变窗口分辨率这件事" class="headerlink" title="关于改变窗口分辨率这件事"></a>关于改变窗口分辨率这件事</h3><p>博主在本地测试时使用F12并拖动控制台边框改变大小时偶然发现的一个小bug</p>
@@ -436,16 +434,15 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-        
           
-            <div class="post-nepre full next">
+            <div class="post-nepre full previous">
           
-            <a href="/2021/08/11/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/" rel="next">
+            <a href="/2021/08/11/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/" rel="prev">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/custom/cover/(5).png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/custom/cover/(5).png">
               </div>
               <span class="label">
-              Next Post</span>
+              Previous Post</span>
               <div class="info">
                 <h3>
                 关于本站</h3>
@@ -453,6 +450,7 @@
               </div>
             </a>
           </div>
+        
         
       </section>
       
@@ -472,11 +470,11 @@
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <a target="_blank" rel="noopener" href="https://Waterthecat.github.io" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/img/custom/avatar.jpg" itemprop="image" alt="waterthecat" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="" itemprop="url" rel="author"></a>
+            <a target="_blank" href="https://Waterthecat.github.io" itemprop="url" rel="author noopener">waterthecat</a>
             </h3>
           </div>
         </div>
