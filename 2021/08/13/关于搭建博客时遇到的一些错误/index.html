@@ -192,6 +192,13 @@
                   <ul class="sub-menu">
                     
                       <li>
+                        <a href="/tags">
+                          <i class="fa fa-tags" aria-hidden="true"></i>
+                          标签
+                        </a>
+                      </li>
+                    
+                      <li>
                         <a href="/categories/%E6%8A%80%E6%9C%AF/">
                           <i class="fa fa-code" aria-hidden="true"></i>
                           技术
@@ -363,7 +370,7 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id="关于搭建博客时遇到的一些错误"><a href="#关于搭建博客时遇到的一些错误" class="headerlink" title="关于搭建博客时遇到的一些错误"></a>关于搭建博客时遇到的一些错误</h1><h2 id="说在前面"><a href="#说在前面" class="headerlink" title="说在前面"></a>说在前面</h2><p>​        小站是基于HEXO并套用了Sakura主题构建的，在建站时遇到了许多困难（<del>本质上是因为博主个人的编程经验约等于0造成的</del>），不过经过几天的不断试错总算是勉强解决了大部分问题，所以通过记录下这些问题方便日后维护。同时希望能和各位交流交流心得，帮助其他同我遇到一样问题的博主。</p>
+          <h1 id="关于搭建博客时遇到的一些错误"><a href="#关于搭建博客时遇到的一些错误" class="headerlink" title="关于搭建博客时遇到的一些错误"></a>关于搭建博客时遇到的一些错误</h1><h2 id="说在前面"><a href="#说在前面" class="headerlink" title="说在前面"></a>说在前面</h2><p>​        小站是基于HEXO并套用了Sakura主题构建的，在建站时遇到了许多困难（<del>本质上是因为博主个人的编程经验约等于0造成的</del>），不过经过几天的不断试错总算是勉强解决了大部分问题，所以通过记录下这些问题方便日后维护。同时希望能和各位交流交流心得，帮助其他同我遇到一样问题的博主，但无奈博主编程经验实在有限，文章内各种方法可能并不那么有效…</p>
 <h3 id="关于归档和清单的子项跳转到404界面这件事"><a href="#关于归档和清单的子项跳转到404界面这件事" class="headerlink" title="关于归档和清单的子项跳转到404界面这件事"></a>关于归档和清单的子项跳转到404界面这件事</h3><hr>
 <p><em>在主题文件夹下languages/zh-cn.yml等文件中增加了相关子页面的信息仍然会跳转到404界面</em></p>
 <hr>
@@ -386,20 +393,21 @@
 <p>在<code>//music.163.com/</code>前方加入http:</p>
 <p>这两个方法比较玄学，慎用</p>
 <h3 id="关于startdash中三个图片替换了却不能加载这件事"><a href="#关于startdash中三个图片替换了却不能加载这件事" class="headerlink" title="关于startdash中三个图片替换了却不能加载这件事"></a>关于startdash中三个图片替换了却不能加载这件事</h3><p>可能是因为更换的图片较大导致，可以看到自带的图片大小都仅有几十k</p>
-<h2 id="接下来是暂时找不到解决方法的一些问题"><a href="#接下来是暂时找不到解决方法的一些问题" class="headerlink" title="接下来是暂时找不到解决方法的一些问题"></a>接下来是暂时找不到解决方法的一些问题</h2><p>希望知道解决办法的博主可以和水猫<del>好好蕉流蕉流♂</del>请使用QQ和博主取得联系，欧内该</p>
+<h2 id="接下来是博主暂时无法解决的一些问题"><a href="#接下来是博主暂时无法解决的一些问题" class="headerlink" title="接下来是博主暂时无法解决的一些问题"></a>接下来是博主暂时无法解决的一些问题</h2><p>希望知道解决办法的博主可以和水猫<del>好好蕉流蕉流♂</del>请使用QQ和博主取得联系，欧内该</p>
 <h3 id="关于使用Typora-Picgo上传文章图片到图床的那些事"><a href="#关于使用Typora-Picgo上传文章图片到图床的那些事" class="headerlink" title="关于使用Typora+Picgo上传文章图片到图床的那些事"></a>关于使用Typora+Picgo上传文章图片到图床的那些事</h3><p>使用Typora+picgo将文章内的图片自动上传到图床后再在cdn文件夹中使用</p>
 <p><code>$ git status</code>，<code>$ git add .</code>,<code>$ git commit -m&#39;****&#39;</code>,<code>$ git push</code></p>
 <p>这些命令时会出现有关url的error</p>
 <h3 id="关于导航栏中“关于”的子项“关于我”的内容修改那些事"><a href="#关于导航栏中“关于”的子项“关于我”的内容修改那些事" class="headerlink" title="关于导航栏中“关于”的子项“关于我”的内容修改那些事"></a>关于导航栏中“关于”的子项“关于我”的内容修改那些事</h3><p>在Sakura/source/js/botui.js中仅能修改对话框中内容，但是无法修改对话框上方的“樱花庄的haojun”，“真白”以及“mashiro”等文本。博主尝试在根目录\source\about\index.md中进行修改，但发现以下注释</p>
 <blockquote>
-<!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->            
+<p>!– 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 –            </p>
 </blockquote>
 <p>博主尝试在这附近</p>
 <pre><code>&lt;div class=&quot;entry-content&quot;&gt;
 &lt;div class=&quot;moe-mashiro&quot; style=&quot;text-align:center; font-size: 50px; 
 ......
 </code></pre>
-<p>进行修改，确实可以改变对话框上方的多处文本，但是将会使对话框内内容无法显示。</p>
+<p>进行修改，可以改变对话框上方的多处文本，但确实会引起bug使对话框内内容无法显示。</p>
+<h3 id="关于赞赏界面内容无法删除那些事"><a href="#关于赞赏界面内容无法删除那些事" class="headerlink" title="关于赞赏界面内容无法删除那些事"></a>关于赞赏界面内容无法删除那些事</h3><p>文章末尾的赞赏界面内有支付宝和微信两个赞助二维码，博主在网上实在<del>（懒）</del>没找到应该在哪个文档删去内容，只能修改主题页下的_config来替换掉捐助的二维码图片了。关于这一项，博主深知自己的博客还不具备让人打赏的价值，所以在日后可能会考虑关闭所有赞赏入口。</p>
 <h3 id="关于首页视频无法播放这件事"><a href="#关于首页视频无法播放这件事" class="headerlink" title="关于首页视频无法播放这件事"></a>关于首页视频无法播放这件事</h3><p>博主上传了一个大小将近19m的视频且cdn路径有效，但一直显示加载中。</p>
 <p>其它大佬说这个视频不应超过20m，也许是因为博主的视频比较大了，日后我会更换较小版本的视频再次尝试是否可以播放。</p>
 <h3 id="关于改变窗口分辨率这件事"><a href="#关于改变窗口分辨率这件事" class="headerlink" title="关于改变窗口分辨率这件事"></a>关于改变窗口分辨率这件事</h3><p>博主在本地测试时使用F12并拖动控制台边框改变大小时偶然发现的一个小bug</p>
@@ -605,9 +613,9 @@
 <script type="text/javascript">
 /* <![CDATA[ */
 if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/Waterthecat/cdn/video/Unbroken.mp4","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/video/Unbroken.mp4","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 } else {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/Waterthecat/cdn/video/Unbroken.mp4","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/Waterthecat/blogcdn/video/Unbroken.mp4","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 }
 /* ]]> */
 
@@ -699,6 +707,13 @@ $(document).ready(function() {
         </a>
         
           <ul class="sub-menu">
+            
+              <li>
+                <a href="/tags">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  标签
+                </a>
+              </li>
             
               <li>
                 <a href="/categories/%E6%8A%80%E6%9C%AF/">
