@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-21T14:33:39.321Z</updated>
+  <updated>2021-09-02T13:40:09.137Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个平平无奇的夜晚</title>
+    <link href="http://example.com/2021/09/02/%E4%B8%80%E4%B8%AA%E5%B9%B3%E5%B9%B3%E6%97%A0%E5%A5%87%E7%9A%84%E5%A4%9C%E6%99%9A/"/>
+    <id>http://example.com/2021/09/02/%E4%B8%80%E4%B8%AA%E5%B9%B3%E5%B9%B3%E6%97%A0%E5%A5%87%E7%9A%84%E5%A4%9C%E6%99%9A/</id>
+    <published>2021-09-02T13:40:00.000Z</published>
+    <updated>2021-09-02T13:40:09.137Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一个平平无奇的夜晚&quot;&gt;&lt;a href=&quot;#一个平平无奇的夜晚&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="随想" scheme="http://example.com/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>ToDoList</title>
